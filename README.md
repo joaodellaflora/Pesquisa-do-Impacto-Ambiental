@@ -1,10 +1,13 @@
-# 📦 PASTA LIMPA PARA DEPLOY NO VERCEL
+# 🌱 Pesquisa do Impacto Ambiental - Univates
 
-## ✅ Esta é a pasta que vai para o Vercel:
-📁 `vercel-deploy/` (apenas **36 KB** vs **150+ MB** da pasta original)
+## 📋 Sobre o Projeto
+O propósito do questionário é coletar informações sobre o deslocamento para a Semana Acadêmica dos Cursos Técnicos da Univates. Os dados serão utilizados para análise do impacto ambiental dos transportes utilizados.
 
+## 🚀 Aplicação Online
+Formulário web moderno para coleta de dados sobre emissões de CO₂ dos deslocamentos dos participantes.
+
+## 📁 Estrutura do Projeto
 ```
-vercel-deploy/
 ├── public/           ← Frontend (HTML + JS)
 │   ├── index.html   ← Interface do usuário
 │   └── index.js     ← JavaScript do formulário
@@ -17,22 +20,29 @@ vercel-deploy/
 └── requirements.txt ← Dependências Python
 ```
 
-## ❌ O que NÃO vai (fica na pasta original):
-- **`.venv/`** - 150+ MB de ambiente virtual local
-- **`backend/`** - Servidor Flask local (substituído pelas APIs)
-- **`frontend/`** - Arquivos de desenvolvimento
-- **Scripts .py** - Ferramentas locais de extração de dados
-- **Documentação .md** - Guias e instruções
-- **Scripts .bat/.sh** - Automatização local
+## 🌐 Tecnologias
+- **Frontend**: HTML5, CSS3 (Tailwind), JavaScript
+- **Backend**: Python com serverless functions
+- **Banco**: SQLite
+- **Deploy**: Vercel
+- **Cálculos**: Fatores de emissão baseados no IPCC
 
-## 🎯 RESUMO:
-- **Pasta original**: `emissao_app (3)` - Para desenvolvimento local
-- **Pasta deploy**: `vercel-deploy` - Só o essencial para produção
+## 📊 Funcionalidades
+- ✅ Formulário responsivo e moderno
+- ✅ Validação em tempo real
+- ✅ Cálculo automático de emissões CO₂
+- ✅ Armazenamento seguro de dados
+- ✅ Múltiplos meios de transporte
+- ✅ Conformidade LGPD
 
-## 🚀 COMO FAZER O DEPLOY:
-1. **Acesse**: https://vercel.com
-2. **Arraste** apenas a pasta `vercel-deploy` 
-3. **Configure** o nome do projeto
-4. **Deploy** automático!
+## 🎯 Como Usar
+1. Acesse o formulário online
+2. Preencha os dados de deslocamento
+3. Envie o formulário
+4. Os dados são processados automaticamente
 
-✨ **Pronto!** Muito mais leve e rápido para upload!
+## 🔗 Links
+- **GitHub**: https://github.com/joaodellaflora/Pesquisa-do-Impacto-Ambiental
+- **Deploy**: Em breve via Vercel
+
+*Desenvolvido para a Semana Acadêmica dos Cursos Técnicos da Univates*
