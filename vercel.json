@@ -1,15 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/*.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "frontend/public/**",
-      "use": "@vercel/static"
+  "functions": {
+    "api/*.py": {
+      "runtime": "python3.9"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/(.*)",
@@ -17,12 +11,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/public/$1"
+      "dest": "/public/$1"
     }
-  ],
-  "functions": {
-    "api/*.py": {
-      "runtime": "python3.9"
-    }
-  }
+  ]
 }
