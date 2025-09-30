@@ -1,0 +1,6 @@
+# Arquivo de configuração para deploy no Render
+Flask==3.1.2
+Flask-CORS==6.0.1
+Flask-SQLAlchemy==3.1.1
+SQLAlchemy==2.0.43
+gunicorn==21.2.0
